@@ -1,0 +1,64 @@
+body {
+    background-color: black;
+    /* font-family: 'Courier Prime', monospace; */
+    font-family: 'Raleway', sans-serif;
+    color:white
+}
+
+.text-container{
+    position: fixed;
+    opacity: 80%;
+    text-shadow: -3px -3px 5px #666, 5px 5px 7px white;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 30pt;
+}
+
+h2 {
+    margin-top: -8%;
+}
+
+img {
+    transform: scale(.45);
+}
+
+.eyes-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 300px);
+}
+
+.eyes:hover {
+    opacity: 0%;
+}
+
+/* link to website */
+#eye_1 {
+    grid-area: 1 / 2 / 2 / 3;
+    margin: 0;
+}
+
+#eye_idle_1, #hover_on_1 {
+    position: absolute;
+}
+
+/* link to instagram */
+#eye_2 {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+#eye_idle_2, #hover_on_2 {
+    position: absolute;
+}
+
+/* liink to contact */
+#eye_3 {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+#eye_idle_3, #hover_on_3 {
+    position: absolute;
+}
